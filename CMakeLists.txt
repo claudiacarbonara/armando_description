@@ -27,5 +27,10 @@ install(
   DIRECTORY launch meshes urdf config worlds models
   DESTINATION share/${PROJECT_NAME}
 )
+ 
+install(
+  PROGRAMS scripts/arm_teleop.py
+  DESTINATION lib/${PROJECT_NAME}
+)
 
 ament_package()
